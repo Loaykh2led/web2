@@ -1,0 +1,317 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background-color:rgb(241, 239, 233) ;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 200px ;
+
+}
+
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color:blueviolet;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.nav a{
+    text-decoration: none;
+    color:blueviolet;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.nav a:hover{
+    color: rgb(25, 0, 255);
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(back\ ground.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    font-size:1.4en ;
+    font-weight: 500;
+    /* font-family: ; */
+    color: white;
+
+}
+
+.main h2 span{
+    font-size:2.6em ;
+    font-weight: 600;
+    color: rgb(162, 0, 255);
+}
+
+.main h3{
+    color: white;
+    font-size:2em ;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btm{
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    padding:0.9375em 2.1875em ;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+    
+}
+
+.main-btm:hover{
+    background-color: blue;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.social-icons a{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 3em;
+    font-weight: 800;
+    color: blueviolet;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow:0 5px 25px rgba(1 1 1 /25%);
+    border-radius: 10px;
+    padding: 25px;
+    margin:15px;
+
+}
+
+.card :hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.icon {
+    font-size: 5.5em;
+    font-weight: 800;
+    color: blue;
+    text-align: center;
+}
+
+.info{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(114, 7, 253);
+    text-align: center;
+    margin: 10px;
+}
+
+.info p{
+    color: blue;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.projects{
+    background-color: rgb(19, 18, 18);
+}
+
+.projects.content{
+    margin-top: 30px;
+}
+
+.project-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 2px;
+    transition: 0.8s ease;
+
+}
+
+.project-card:hover{
+    transition: 0.8s ease;
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    /* transition: 0.8s ease; */
+    /* transform: scale(1.1); */
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+}
+
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 1.2em;
+    color: black;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+.more-details{
+    text-decoration: none;
+    color: blue;
+
+}
+
+.more-details:hover{
+    color: blueviolet;
+}
+
+.card-content .icon{
+    font-size: 4.5em;
+    
+
+}
+
+.card-content h3{
+    color: black;
+}
+
+.card-content p{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-bottom: 1em; */
+    font-size: 1em;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight:600;
+}
+
+.footer-title span{
+    color: rgb(111, 0, 255);
+}
+
+
+@media (max-width:1023px){
+    header{
+        padding: 15px 25px;
+    }
+    .nav a{
+        padding-left: 15px;
+        font-size: 1.3em;
+    }
+
+    .title{
+        font-size: 1.8em;
+
+    }
+    section{
+        padding: 80px 20px; 
+    }
+
+    .min-content h2{
+        font-size: 1.1em;
+
+    }
+    .min-content h3{
+        font-size: 1.6em;
+
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+         
+    }
+}
+
+
+@media(max-width:641px){
+    body{
+        font-size: 12px;       
+    }
+    .main-content h2{
+        font-size: 0.8em;
+
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+        
+    }
+}
+
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+
+    }
+
+}
